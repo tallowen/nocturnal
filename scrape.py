@@ -182,7 +182,7 @@ def buildJSON(builds):
 def write_output(output_dir, filename, text):
     """Helper function that writes a string out to a file."""
     f = open(os.path.join(output_dir, filename), 'w')
-    f.write(text)
+    f.write(text.encode('utf-8'))
     f.close()
 
 
